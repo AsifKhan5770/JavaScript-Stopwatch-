@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background:#2f1338;
+        }
+        .title{
+            color: aliceblue;
+            padding: 0px;
+            margin:0px 0 70px 0 ;
+        }
+        .counter, .btn{
+            display: flex;
+        }
+        .counter h1{
+            background-color:#e6eafe;
+            padding: 20px;
+            margin: 10px;;
+            border-radius: 100px;
+            height: 250px;
+            width: 250px;
+            font-size:250px ;
+        
+        }
+        .btn button{
+            padding: 30px;
+            border-radius:20px;
+            margin: 30px;
+            width:200px;
+            font-size:40px;
+            background-color:#ef77d8;
+         }
+         .start{
+            color:rgb(57, 176, 57);
+         }
+         .stop{
+            color:rgb(243, 8, 8);
+         }
+         .reset{
+            color: antiquewhite;
+         }
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="title">Online Timer & Stopwatch</h1>
+    </div>
+
+        <div class="counter">
+            <h1 class="hour">00</h1>
+            <h1 class="min">00</h1>
+            <h1 class="sec">00</h1>
+            <h1 class="ms">00</h1>
+        </div>
+        
+        
+        <div class="btn">
+            <button class="start">Start</button>
+            <button class="stop">Stop</button>
+            <button class="reset">Reset</button>
+        </div>
+            
+    
+    <script src="assets/js/index.js"></script>
+
+</body>
+</html>
